@@ -6,7 +6,7 @@ body {
 }
 
 .small {
-    font-size: 10px;;
+    font-size: 12px;;
 }
 
 .center_it {
@@ -36,11 +36,44 @@ body {
 }
 
 .sub_title {
-    color: aliceblue;
-    text-shadow: 2px 2px 80px #FF0000;
-    font-size: 4vh;
-    font-weight: 400 !important;
-}
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 3vh;
+    transition: all .5s ease;
+   }
+   
+   .sub_title:hover {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+   }
+   
+   .sub_title:active {
+    letter-spacing: 3px;
+    background-color: hsl(261deg 80% 48%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+   }
+
+
+
+   .hide {
+    display: none;
+  }
+      
+  .myDIV:hover + .hide {
+    display: block;
+    color: red;
+  }
+
 
 @media (max-width: 576px) {
     .title {
@@ -49,8 +82,62 @@ body {
         text-shadow: 2px 2px 80px #FF0000;
     }
     .sub_title {
-        color: aliceblue;
         text-shadow: 2px 2px 60px #FF0000;
         font-size: 2vh;
     }
 }
+
+
+.card-custom {
+    position: relative;
+    width: auto;
+    height: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }  
+  .card-custom:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card-custom:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  
+  .card-custom:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+  }
