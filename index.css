@@ -67,36 +67,28 @@ body {
     text-transform: uppercase;
     font-size: 3vh;
     transition: all .5s ease;
+    color: #473282 !important;
    }
    
    .sub_title:hover {
     letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
-    color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 7px 29px 0px;
+    background-color: #473282 ;
+    color: hsl(0, 0%, 100%)!important;;
+    box-shadow: #473282 0px 7px 29px 0px;
    }
    
    .sub_title:active {
     letter-spacing: 3px;
-    background-color: hsl(261deg 80% 48%);
+    background-color: #473282(261deg 80% 48%);
     color: hsl(0, 0%, 100%);
-    box-shadow: rgb(93 24 220) 0px 0px 0px 0px;
+    box-shadow: #473282 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
    }
-
-
-
    .hide {
     display: none;
   }
       
-  .myDIV:hover + .hide {
-    display: block;
-    color: red;
-  }
-
-
 @media (max-width: 576px) {
     .title {
         font-size: 4vh;
@@ -177,9 +169,4 @@ body {
   .card-custom:hover svg {
     scale: 0;
     transform: rotate(-45deg);
-  }
-
-  .image_custom {
-    /* height: 260px;
-    width: 500px; */
   }
