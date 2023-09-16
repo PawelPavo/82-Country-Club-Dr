@@ -35,6 +35,28 @@ body {
     text-shadow: 2px 2px 80px #FF0000;
 }
 
+.phone_num {
+  font-size: 6vh; 
+  font-weight: 400;
+  color: #473282 !important;
+}
+
+.phone_num:hover {
+  filter: brightness(150%);
+}
+
+.email {
+  font-size: 4vh; 
+  font-weight: 400;
+  color: #6a4bc3 !important;
+
+}
+
+.email:hover {
+  color: #473282 !important;
+
+}
+
 .sub_title {
     padding: 17px 40px;
     border-radius: 50px;
@@ -85,8 +107,24 @@ body {
         text-shadow: 2px 2px 60px #FF0000;
         font-size: 2vh;
     }
+    .phone_num {
+      font-size: 4vh;
+    }
+    .email {
+      font-size: 2vh;
+
+    }
 }
 
+@media (max-width: 768px) {
+  .phone_num {
+    font-size: 4vh;
+  }
+  .email {
+    font-size: 2vh;
+
+  }
+}
 
 .card-custom {
     position: relative;
@@ -139,4 +177,9 @@ body {
   .card-custom:hover svg {
     scale: 0;
     transform: rotate(-45deg);
+  }
+
+  .image_custom {
+    /* height: 260px;
+    width: 500px; */
   }
