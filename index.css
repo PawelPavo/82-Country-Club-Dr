@@ -1,9 +1,56 @@
 body {
     font-family: 'Lato', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: 'Quicksand', sans-serif; */
+     margin: 0;
 }
 
 .small {
     font-size: 10px;;
+}
+
+.center_it {
+    display: flex;
+    justify-content: cemter;
+    height: 100vh;
+    align-items: center;
+    background-image: url("Exterior/Greg-36.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.feature {
+    background:rgba(0,0,0,0.4);
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin: 0;
+}
+
+.title {
+    font-size: 7vh; 
+    font-weight: 400;
+    text-shadow: 2px 2px 80px #FF0000;
+}
+
+.sub_title {
+    color: aliceblue;
+    text-shadow: 2px 2px 80px #FF0000;
+    font-size: 4vh;
+    font-weight: 400 !important;
+}
+
+@media (max-width: 576px) {
+    .title {
+        font-size: 4vh;
+        font-weight: 400;
+        text-shadow: 2px 2px 80px #FF0000;
+    }
+    .sub_title {
+        color: aliceblue;
+        text-shadow: 2px 2px 60px #FF0000;
+        font-size: 2vh;
+    }
 }
